@@ -1,0 +1,17 @@
+.promo {
+  background-color: #68b738;
+
+  height: 289px;
+}
+.promo {
+  background: $mobile-background  no-repeat;
+  background-size: cover;
+}
+.promo__text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}

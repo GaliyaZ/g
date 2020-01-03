@@ -1,0 +1,98 @@
+.action {
+  position: relative;
+}
+.action__heading {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  text-transform: none;
+  color: #111111;
+  padding-bottom: 35px;
+  margin: 0;
+}
+.action__list {
+  list-style: none;
+  padding: 0;
+  font-size: 0;
+}
+.action__item {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+  padding: 0 0 28px 80px;
+}
+.action__item--nutrients::before {
+  content: "";
+  position: absolute;
+  background-color: $green;
+  width: 60px;
+  height: 60px;
+  top: 93px;
+  left: 0;
+}
+.action__item--powder::before {
+  content: "";
+  position: absolute;
+  background-color: $green;
+  width: 60px;
+  height: 60px;
+  top: 173px;
+  left: 0;
+}
+.action__item--replace::before {
+  content: "";
+  position: absolute;
+  background-color: $green;
+  width: 60px;
+  height: 60px;
+  top: 253px;
+  left: 0;
+}
+.action__item--result::before {
+  content: "";
+  position: absolute;
+  background-color: $green;
+  width: 60px;
+  height: 60px;
+  top: 333px;
+  left: 0;
+}
+.action__item--nutrients::after {
+  content: "";
+  position: absolute;
+  background: url("../img/advantage-leaf@1x.png");
+  width: 50px;
+  height: 50px;
+  top: 95px;
+  left: 5px;
+}
+.action__item--powder::after {
+  content: "";
+  position: absolute;
+  background: url("../img/advantage-powder@1x.png");
+  width: 50px;
+  height: 50px;
+  top: 176px;
+  left: 5px;
+}
+.action__item--replace::after {
+  content: "";
+  position: absolute;
+  background: url("../img/advantage-dining@1x.png");
+  width: 50px;
+  height: 50px;
+  top: 257px;
+  left: 5px;
+}
+.action__item--result::after {
+  content: "";
+  position: absolute;
+  background: url("../img/advantage-clock@1x.png");
+  width: 50px;
+  height: 50px;
+  top: 337px;
+  left: 5px;
+}

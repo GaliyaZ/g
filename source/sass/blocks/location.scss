@@ -1,0 +1,32 @@
+.location__map {
+  position: relative;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  width: 320px;
+  height: 360px;
+}
+.location__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+.location__partnership {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 0;
+}
+.location__address {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  font-style: normal;
+}
+.location__image {
+  position: absolute;
+  left: 132px;
+  bottom: 130px;
+}

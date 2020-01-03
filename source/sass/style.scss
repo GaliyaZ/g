@@ -1,6 +1,30 @@
-p {
-    color: red;
+@import "blocks/fonts.scss";
+@import "blocks/variables.scss";
+@import "blocks/site-header.scss";
+@import "blocks/food.scss";
+@import "blocks/example.scss";
+@import "blocks/footer.scss";
+@import "blocks/promo.scss";
+@import "blocks/location.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/weight.scss";
+@import "blocks/action.scss";
+@import "blocks/catalog-main.scss";
+@import "blocks/catalog.scss";
+@import "blocks/catalog-table.scss";
+@import "blocks/product.scss";
+@import "blocks/additional.scss";
+@import "blocks/additional-table.scss";
+@import "blocks/form-main.scss";
+@import "blocks/socials.scss";
+
+body {
+  width: 100%;
 }
-h1 {
-    background-color: rgb(80, 80, 199);
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@media (min-width: $tablet-width) {
+
 }

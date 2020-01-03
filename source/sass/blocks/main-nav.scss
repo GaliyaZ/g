@@ -1,0 +1,19 @@
+.main-nav__list {
+  list-style: none;
+  display: none;
+}
+.main-nav__item {
+  text-decoration: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+  }
+}

@@ -1,0 +1,118 @@
+.weight__block {
+  background-color: $gray;
+  position: relative;
+  padding: 30px 20px 23px 20px;
+}
+.weight__block--loss {
+  margin-bottom: 20px;
+}
+.weight__block--gain {
+  margin-bottom: 35px;
+}
+.weight__heading {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 0 0 37px 0;
+  padding-left: 72px;
+}
+.weight__heading::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: $green;
+  top: 25px;
+  left: 22px;
+}
+.weight__heading--loss::after {
+  content: "";
+  position: absolute;
+  background: url("../img/icon-cat-slim.svg");
+  width: 35px;
+  height: 49px;
+  top: 22px;
+  left: 30px;
+}
+.weight__heading--gain::after {
+  content: "";
+  position: absolute;
+  background: url("../img/icon-cat-pro.svg");
+  width: 67px;
+  height: 28px;
+  top: 35px;
+  left: 13px;
+}
+.weight__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  padding-bottom: 25px;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+/*.weight__line {
+  margin: 0 0 20px 0;
+}*/
+.weight__link {
+  text-decoration: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #111111;
+}
+.weight__link::after {
+  content: "";
+  position: absolute;
+  background: url("../img/icon-right-arrow-long.svg");
+  width: 24px;
+  height: 11px;
+  bottom: 24px;
+  left: 115px;
+}
+@media (min-width: $tablet-width) {
+  .weight__heading {
+    font-size: 36px;
+    line-height: 37px;
+    margin-bottom: 30px;
+    padding-left: 0;
+  }
+  .weight__block {
+    min-height: 237px;
+    padding: 80px 292px 55px 55px;
+  }
+  .weight__text {
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    padding-bottom: 40px;
+  }
+  .weight__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .weight__heading::before {
+    width: 200px;
+    height: 200px;
+    top: 90px;
+    left: 450px;
+  }
+  .weight__heading--loss::after {
+    width: 140px;
+    height: 194px;
+    top: 78px;
+    left: 477px;
+  }
+  .weight__heading--gain::after {
+    width: 268px;
+    height: 112px;
+    top: 135px;
+    left: 413px;
+  }
+}
