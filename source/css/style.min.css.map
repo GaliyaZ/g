@@ -1,1 +1,0 @@
-{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA;EACI,UAAU,EAAA;;AAEd;EACI,yBAAkC,EAAA","file":"style.min.css","sourcesContent":["p {\r\n    color: red;\r\n}\r\nh1 {\r\n    background-color: rgb(80, 80, 199);\r\n}"]}
