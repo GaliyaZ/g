@@ -1,6 +1,7 @@
 @import "fonts.scss";
 @import "variables.scss";
-@import "normalize.scss";
+/*@import "temp.scss";*/
+@import "scaffolding.scss";
 @import "blocks/site-header.scss";
 @import "blocks/food.scss";
 @import "blocks/example.scss";
@@ -19,13 +20,3 @@
 @import "blocks/form-main.scss";
 @import "blocks/socials.scss";
 
-body {
-  width: 100%;
-}
-.container {
-  padding: 0 20px;
-  margin: 0 auto;
-}
-@media (min-width: $tablet-width) {
-
-}
