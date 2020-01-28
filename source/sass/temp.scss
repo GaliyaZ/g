@@ -4,14 +4,12 @@ body {
     min-height: 750px;
   }
   
-  
-  @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) and (max-width: $end-tablet) {
     body {
       background: @bg-darkgrey url("img/bb-tablet.png") no-repeat 50% 0;
       background-size: 1178px auto;
     }
   }
-  
   
   @media (min-width: @desktop-width) {
     body {

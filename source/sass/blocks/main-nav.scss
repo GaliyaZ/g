@@ -28,7 +28,7 @@
   border-top: 1px solid #e5e5e5;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) and (max-width: $end-tablet) {
   .main-nav__list {
     flex-direction: row;
     justify-content: space-between;
@@ -42,9 +42,31 @@
 
   .main-nav__item a {
     padding: 11px 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
   }
 
   .main-nav__active {
     border-bottom: 2px solid $green;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__item a {
+    padding: 11px 0;
+    text-align: center;
+    line-height: 25px;
+  }
+  
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 480px;
+    padding-right: 20px;
+  }
+
+  .main-nav__item, .main-nav__item:nth-child(1) {
+    border: none;
   }
 }

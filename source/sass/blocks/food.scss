@@ -39,7 +39,7 @@
 .food__image {
   padding-top: 30px;
 }
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) and (max-width: $end-tablet) {
   .food {
     background: none;
     position: relative;
@@ -63,5 +63,22 @@
     font-size: 20px;
     line-height: 20px;
     position: absolute;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .food {
+    text-align: left;
+  }
+
+  .food__heading {
+    width: 490px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+  }
+
+  .food__text {
+    color: #000000;
   }
 }
