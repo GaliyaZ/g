@@ -1,33 +1,38 @@
 .food {
-  background: $mobile-background no-repeat;
-  background-size: cover;
-  height: 305px;
-  width: auto;
+  max-height: 275px;
+  //width: auto;
   margin: 0;
-  padding: 0;
+  padding: 30px 30px 0 30px;
   font-family: "Oswald", "Arial", sans-serif;
   text-align: center;
   margin-bottom: 220px;
+  background-color: $green;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  background-size: cover;
 }
+
 .food__heading {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   color: #ffffff;
   margin: 0;
-  padding-top: 30px;
-
+  padding: 0 0 25px 0;
 }
+
 .food__text {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 20px;
+  padding: 0 0 25px 0;
+  margin: 0px;
 }
+
 .food__link {
   display: block;
   width: 100%;
+  height: 18px;
   padding: 10px 0 12px 0;
   text-decoration: none;
   font-size: 14px;
@@ -37,19 +42,23 @@
   background-color: $green;
 }
 .food__image {
-  padding-top: 30px;
+  //padding-top: 30px;
 }
 @media (min-width: $tablet-width) and (max-width: $end-tablet) {
   .food {
+    display: flex;
+    flex-direction: column;
     background: none;
     position: relative;
+    padding: 55px 90px 0 90px;
+    min-height: 800px;
+    margin: 0;
   }
   .food__heading,
   .food__text {
     color: #000000;
     text-align: left;
-    padding-left: 90px;
-    padding-right: 90px;
+    padding-bottom: 40px;
   }
   .food__heading {
     font-size: 60px;
@@ -57,18 +66,34 @@
   }
   .food__link {
     width: 245px;
-    min-height: 22px;
+    height: 22px;
     padding: 15px 0;
-    margin-left: 90px;
     font-size: 20px;
     line-height: 20px;
-    position: absolute;
+    order: 1;
+  }
+
+  .food__image {
+    order: 2;
+    position: absolute; /*fixed*/
+    width: 709px;
+    height: 609px;
+    bottom: 0px;
+    top: 180px; 
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
   }
 }
 
 @media (min-width: $desktop-width) {
   .food {
+    flex-grow: 1;
     text-align: left;
+    padding-left: 80px;
+    background: none;
+    min-height: 0px;
   }
 
   .food__heading {
@@ -80,5 +105,28 @@
 
   .food__text {
     color: #000000;
+  }
+
+  .food__link {
+    width: 245px;
+    min-height: 22px;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 20px;
+    line-height: 20px;
+    order: 1;
+  }
+
+  .food__image {
+    order: 2;
+    position: absolute; /*fixed*/
+    width: 552px;
+    height: 499px;
+    bottom: 50px;
+    top: 135px; 
+    left: 500;
+    right: 340;
+    margin: auto;
+    //z-index: -1;
   }
 }

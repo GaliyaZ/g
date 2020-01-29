@@ -18,9 +18,9 @@
           <img class="site-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип компании">
         </picture>
       </a>
-      <button class="site-header__toggle" type="button">Меню</button>
+      <button class="site-header__toggle site-header__toggle--nojs" type="button">Меню</button>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed">
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__active" href="index.html">Главная</a>
@@ -36,7 +36,11 @@
     <div class="food">
       <h1 class="food__heading">Функциональное питание для котов</h1>
       <p class="food__text">Занялся собой? Займись котом!</p>
-      <img class="food__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Кошачий корм">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/index-can-desktop@1x.png">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+        <img class="food__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Кошачий корм">
+      </picture>
       <a class="food__link" href="#">Подобрать программу</a>
     </div>
   </header>

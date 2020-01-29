@@ -1,3 +1,4 @@
+
 .main-nav__list {
   list-style: none;
   margin: 0;
@@ -32,6 +33,7 @@
   .main-nav__list {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 470px;
     padding-right: 20px;
   }
@@ -42,7 +44,7 @@
 
   .main-nav__item a {
     padding: 11px 0;
-    text-align: center;
+    //text-align: center;
     font-size: 18px;
     line-height: 25px;
   }
@@ -53,20 +55,30 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav {
+    //flex-grow: 1;
+  }
+
   .main-nav__item a {
     padding: 11px 0;
     text-align: center;
     line-height: 25px;
+    color: $white;
   }
   
   .main-nav__list {
     flex-direction: row;
     justify-content: space-between;
     width: 480px;
-    padding-right: 20px;
+    //padding-right: 20px;
+    //z-index: -2;
   }
 
   .main-nav__item, .main-nav__item:nth-child(1) {
     border: none;
+  }
+
+  .main-nav__item:nth-child(1) {
+    border-bottom: 2px solid $white;
   }
 }
