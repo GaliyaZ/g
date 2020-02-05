@@ -58,16 +58,22 @@
 
 @media (min-width: $desktop-width) {
   .site-header {
+    max-width: 1440px;
+    min-height: 696px;
     background-color: $green;
     background: url("../img/index-background-desktop@1x.jpg") no-repeat;
-    background-position: right;
+    background-position: right top;
     background-size: 50%;
     max-width: 1220px;
     flex-direction: row;
     justify-content: space-between;
     //flex-grow: 1;
     align-items: center;
-    padding: 52px 110px 0px 110px;
+    padding: 0px 110px 80px 110px;
+  }
+
+  .site-header__wrapper {
+    padding: 0;
   }
   
   .site-header__logo-image {

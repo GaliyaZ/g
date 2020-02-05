@@ -1,3 +1,7 @@
+.weight {
+  max-width: 727px;
+}
+
 .weight__block {
   background-color: $gray;
   position: relative;
@@ -60,14 +64,19 @@
   margin: 0 0 20px 0;
 }*/
 .weight__link {
+  display: block;
+  max-width: 120px;
   text-decoration: none;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: #111111;
+  background: url("../img/icon-right-arrow-long.svg") no-repeat;
+  background-size: 24px 11px;
+  background-position: right;
 }
-.weight__link::after {
+/*.weight__link::after {
   content: "";
   position: absolute;
   background: url("../img/icon-right-arrow-long.svg");
@@ -75,8 +84,9 @@
   height: 11px;
   bottom: 24px;
   left: 115px;
-}
-@media (min-width: $tablet-width) {
+}*/
+
+@media (min-width: $tablet-width) and (max-width: $end-tablet) {
   .weight__heading {
     font-size: 36px;
     line-height: 37px;

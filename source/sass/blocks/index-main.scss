@@ -1,0 +1,12 @@
+.index-main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) and (max-width: $end-tablet) {
+    .index-main {
+        padding: 0px 30px 0px 30px;
+    }  
+}
