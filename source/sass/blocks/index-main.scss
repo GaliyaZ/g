@@ -10,3 +10,10 @@
         padding: 0px 30px 0px 30px;
     }  
 }
+
+@media (min-width: $desktop-width) {
+    .index-main {
+        max-width: 1440px;
+        padding: 0px 110px 0px 110px;
+    }
+}
