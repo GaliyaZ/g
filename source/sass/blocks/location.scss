@@ -25,8 +25,13 @@
   color: #444444;
   font-style: normal;
 }
-.location__image {
+.location__image::before {
+  content: "";
   position: absolute;
+  background: url("../img/map-pin.png") no-repeat;
+  width: 124px;
+  height: 106px;
   left: 132px;
   bottom: 130px;
+  z-index: 2;
 }
