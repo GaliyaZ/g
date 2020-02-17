@@ -1,7 +1,3 @@
-/*.action {
-  position: relative;
-}*/
-
 .action__heading {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
@@ -21,8 +17,13 @@
   flex-direction: column;
 }
 
+.action__item-wrapper {
+  position: relative;
+}
+
 .action__item {
   position: relative;
+  box-sizing: border-box;
   min-height: 60px; //иконки склеиваются, мало текста
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -30,8 +31,9 @@
   font-weight: 400;
   color: #444444;
   padding: 0 0 20px 80px;
-/*
-  background-color: $green;
+  z-index: 10;
+
+  /*background-color: $green;
   background-position: left top;
   background-size: 60px 60px;*/
 }
@@ -85,20 +87,59 @@
 }
 
 @media (min-width: $tablet-width) and (max-width: $end-tablet) {
+  .action__heading {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 70px;
+  }
+  
   .action__list {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
+  .action__item-wrapper {
+    width: 47%;
+  }
+  
+  .action__item-wrapper--nutrients::before {
+    content: "1";
+
+  }
+
+  .action__item-wrapper--powder::before {
+    content: "2";
+  }
+  
+  .action__item-wrapper--replace::before {
+    content: "3";
+  }
+
+  .action__item-wrapper--result::before {
+    content: "4";
+  }
+
+  .action__item-wrapper--nutrients::before,
+  .action__item-wrapper--powder::before,
+  .action__item-wrapper--replace::before,
+  .action__item-wrapper--result::before {
+    position: absolute;
+    top: -38px;
+    left: 122px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 281px;
+    line-height: 281px;
+    font-weight: 400;
+    color: #f2f2f2;
+  }
+
   .action__item {
     position: relative;
-    width: 34%;
     padding: 115px 0 0 0;
     margin: 0 84px 89px 0;
     font-size: 16px;
     line-height: 24px;
-    z-index: 2;
   }
   
   .action__item::before {
@@ -135,5 +176,58 @@
 }
 
 @media (min-width: $desktop-width) {
+  .action__heading {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 70px;
+  }
 
+  .action__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .action__item-wrapper--nutrients::before {
+    content: "1";
+
+  }
+
+  .action__item-wrapper--powder::before {
+    content: "2";
+  }
+  
+  .action__item-wrapper--replace::before {
+    content: "3";
+  }
+
+  .action__item-wrapper--result::before {
+    content: "4";
+  }
+
+  .action__item-wrapper--nutrients::before,
+  .action__item-wrapper--powder::before,
+  .action__item-wrapper--replace::before,
+  .action__item-wrapper--result::before {
+    position: absolute;
+    top: -38px;
+    left: 122px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 281px;
+    line-height: 281px;
+    font-weight: 400;
+    color: #f2f2f2;
+  }
+
+  .action__item {
+    position: relative;
+    padding: 115px 0 0 0;
+    margin: 0 84px 89px 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .action__item::before {
+    width: 80px;
+    height: 80px;
+  }
 }
