@@ -13,7 +13,9 @@
 
 @media (min-width: $desktop-width) {
     .index-main {
+        box-sizing: border-box;
         max-width: 1440px;
         padding: 0px 110px 0px 110px;
+        margin: 0 auto;
     }
 }
