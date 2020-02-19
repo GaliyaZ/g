@@ -96,7 +96,7 @@
   }
 
   .action__item-wrapper {
-    width: 47%;
+    width: 40%;
   }
   
   .action__item-wrapper--nutrients::before {
@@ -129,11 +129,18 @@
     font-weight: 400;
     color: #f2f2f2;
   }
+  .action__item-wrapper {
+    position: relative;
+    margin: 0 50px 89px 0;
+  }
+
+  .action__item-wrapper:nth-child(2n) {
+    margin-right: 0;
+  }
 
   .action__item {
     position: relative;
     padding: 115px 0 0 0;
-    margin: 0 84px 89px 0;
     font-size: 16px;
     line-height: 24px;
   }
@@ -147,7 +154,8 @@
   .action__item--powder::after,
   .action__item--replace::after,
   .action__item--result::after {
-    display: none;
+    top: 15px;
+    left: 15px
   }
 
   /*.action__item--nutrients {
@@ -199,16 +207,32 @@
     color: #f2f2f2;
   }
 
+  .action__item-wrapper {
+    position: relative;
+    margin: 0 50px 89px 0;
+  }
+
   .action__item {
     position: relative;
     padding: 115px 0 0 0;
-    margin: 0 84px 89px 0;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .action__item-wrapper:nth-child(4n) {
+    margin-right: 0;
   }
   
   .action__item::before {
     width: 80px;
     height: 80px;
+  }
+
+  .action__item--nutrients::after,
+  .action__item--powder::after,
+  .action__item--replace::after,
+  .action__item--result::after {
+    top: 15px;
+    left: 15px
   }
 }
