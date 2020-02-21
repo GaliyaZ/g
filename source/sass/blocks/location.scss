@@ -1,15 +1,16 @@
-.location__map {
+.location {
   position: relative;
-  background-image: url("../img/bg-map-mobile@1x.png");
-  width: 320px;
-  height: 360px;
+  padding: 25px 20px 0px 20px;
+  background: url("../img/bg-map-mobile@1x.png") no-repeat;
+  background-position: 50% 100%;
 }
+
 .location__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   padding-top: 30px;
   padding-bottom: 25px;
-}
+} 
 .location__partnership {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
