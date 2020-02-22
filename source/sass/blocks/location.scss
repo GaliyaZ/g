@@ -1,15 +1,14 @@
 .location {
   position: relative;
-  padding: 25px 20px 0px 20px;
-  background: url("../img/bg-map-mobile@1x.png") no-repeat;
+  /*background: url("../img/bg-map-mobile@1x.png") no-repeat;
   background-position: 50% 100%;
+  background-size: auto 50%;*/
 }
 
 .location__wrapper {
   display: flex;
   justify-content:space-between;
-  padding-top: 30px;
-  padding-bottom: 25px;
+  padding: 30px 20px 25px 20px;
 } 
 .location__partnership {
   font-family: "Oswald", "Arial", sans-serif;
@@ -17,6 +16,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+  padding-right: 15px;
   margin: 0;
 }
 .location__address {
@@ -26,7 +26,7 @@
   color: #444444;
   font-style: normal;
 }
-.location__image::before {
+/*.location__image::before {
   content: "";
   position: absolute;
   background: url("../img/map-pin.png") no-repeat;
@@ -35,4 +35,4 @@
   left: 132px;
   bottom: 130px;
   z-index: 2;
-}
+}*/
