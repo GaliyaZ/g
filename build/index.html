@@ -100,13 +100,18 @@
             </p>
             <p class="example__legend">
               <strong class="example__weight">60 дней</strong>
-              <span class="example__span">Затрачено времени</span>
+              <span class="example__span example__time">Затрачено времени</span>
+            </p>
+            <div class="example__break"></div>
+            <p class="example__cost">
+              Затраты на питание: 15 000 руб.
             </p>
           </div>
-          <p class="example__cost">
-            Затраты на питание: 15 000 руб.
-          </p>
-          <img src="img/before-mobile@1x.png" class="example__image example__image--cat" width="311" height="232" alt="Фотография кота">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/before-desktop@1x.png">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+            <img src="img/before-mobile@1x.png" class="example__image example__image--fat" width="311" height="232" alt="Фотография кота">
+          </picture>
           <div class="example__wrapper-difference">
             <p class="example__was">Было</p>
             <input class="example__progress" type="range" value="20" max="40">
