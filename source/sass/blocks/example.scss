@@ -81,6 +81,11 @@
   color: #111111;
   text-align: center;
   margin: 20px auto;
+  padding-bottom: 40px;
+}
+
+.example__image-wrapper {
+  text-align: center;
 }
 
 .example__was,
@@ -106,7 +111,7 @@
 
 @media (min-width: $tablet-width) and (max-width: $end-tablet) {
   .example {
-    background-color: #ffffff;
+    background-color: $gray;
     padding: 0px 0px 0px 0px;
   }  
 
@@ -135,7 +140,7 @@
   .example__span {
     font-size: 14px;
     line-height: 14px;
-    background-color: #ffffff;
+    background-color: $gray;
     width: 115px;
     left: 22px;
     bottom: -18px;
@@ -174,7 +179,8 @@
   }
 
   .example__wrapper-difference {
-    background-color: $gray;
+    //background: linear-gradient($gray, $gray);
+    //background-size: 100px 300px;
     padding: 00px 30px 68px 30px;
   }
 
@@ -189,6 +195,66 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    padding: 0px 110px 0px 110px;
+    display: flex;
+    align-items: flex-end;
+    background-color: $gray;
+    padding: 0px 110px 65px 110px;
   } 
+
+  .example__wr {
+    width: 35%;
+  }
+  .example__heading {
+    font-size: 60px;
+    padding: 30px 0px 126px 0px;
+  }
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 70px 0;  
+  }
+  .example__cost {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 50px 0 16px 0;
+    padding: 0;
+  }
+
+  .example__cost-value {
+    padding-left: 55px;
+  }
+
+  .example__wrapper {    
+    justify-content: flex-start;
+  }
+
+  .example__legend:first-child {
+    margin-right: 42px;
+  }
+
+  .example__wr2 {
+    flex-grow: 1;
+  }
+  .example__image {
+    width: 677px auto;
+  }
+  .example__weight {
+    font-size: 30px;
+    line-height: 31px;
+  } 
+
+  .example__span {
+    font-size: 14px;
+    line-height: 14px;
+    width: 115px;
+    left: 22px;
+    bottom: -18px;
+  }
+
+  .example__legend {
+    width: 160px;
+    height: 50px;
+    padding-top: 20px;
+  }
+
 }
