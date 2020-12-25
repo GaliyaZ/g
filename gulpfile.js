@@ -93,6 +93,7 @@ gulp.task('css', function () {
     gulp.watch('source/sass/**/*.{sass,scss}', gulp.series('css', 'refresh'));
     //gulp.watch('source/img/icon-*.svg', gulp.series('sprite', 'html'));
     gulp.watch('source/*.html', gulp.series('html', 'refresh')); //on('change',server.reload);
+    gulp.watch('source/js/*.js', gulp.series('copy', 'refresh'));
   });
   
   gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html'));
